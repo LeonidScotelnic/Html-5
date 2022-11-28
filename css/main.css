@@ -1,0 +1,242 @@
+@import "css/reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@400;500;600;700&display=swap");
+
+.body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  font-style: 14px;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+  padding-top: 46px;
+  background-color: #f1f1f1;
+}
+
+.header__nav {
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-end;
+
+  margin-bottom: 76px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 32px;
+  text-decoration: none;
+  color: #000000;
+
+  position: relative;
+  padding-right: 12px;
+  padding-bottom: 3px;
+  line-height: 1;
+  padding: 0 12px 3px 0;
+}
+
+.logo::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #fda300;
+  border-radius: 50%;
+}
+
+/* Nav */
+
+.nav-list {
+  display: flex;
+  column-gap: 50px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-button{
+    display: none;
+}
+
+.nav-item {
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav-link.active {
+  color: #606060;
+}
+
+/*header row*/
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+
+
+.header-title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-style: 44px;
+}
+
+.header__content p {
+  line-height: 2;
+}
+
+.header__content {
+  max-width: 500px;
+  margin-top: 124px;
+}
+.title {
+  color: #070707;
+  font-weight: 600;
+  font-size: 34px;
+}
+
+/* Services  */
+
+.services {
+  padding: 90px 0;
+}
+
+.services__row {
+  display: flex;
+  column-gap: 30px;
+  flex-wrap: wrap;
+}
+
+.services__card {
+  flex: 1 1 0;
+  min-width: 315px;
+  row-gap: 60px;
+}
+
+.services-card-img {
+  margin-bottom: 30px;
+}
+
+.services-card-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-style: 24px;
+
+  text-transform: uppercase;
+}
+
+.services__card p {
+  line-height: 2;
+}
+
+/* Portfolio */
+
+.portfolio {
+  background-color: #f1f1f1;
+  padding: 90px 0;
+}
+
+.portfolio_title {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.project {
+  text-align: center;
+}
+
+.project_img {
+  margin-bottom: 40px;
+}
+
+.project_title {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.project_title a {
+  color: #070707;
+}
+
+.project + .project {
+  margin-top: 90px;
+}
+
+/*contacts*/
+
+.contacts {
+  padding: 90px 0;
+  text-align: center;
+}
+
+.contacts_title {
+  margin-bottom: 40px;
+}
+
+.contacts_content {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  max-width: 480px;
+  font-size: 18px;
+}
+
+.contacts_content p + p {
+  margin-top: 1em;
+}
+
+.contacts_btn {
+  margin-bottom: 80px;
+}
+
+.cont_btn {
+  display: inline-block;
+  padding: 2px 22px;
+  background-color: #070707;
+  border-radius: 30px;
+
+  font-size: 18px;
+  color: #fff;
+
+  text-decoration: none;
+  transition: background-color 0.2s ease-in,top 0.2s ease-in ;
+}
+
+.cont_btn:hover, .cont_btn:focus{
+    background-color: #363535;
+
+}
+
+.cont_btn:active{
+    position: relative;
+    top: 1px;
+    background-color: #000000;
+}
+
+.conatcts_social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+
+    margin-bottom: 40px;
+}
+
+.contacts_footer{
+    font-size: 14px;
+    color: #828282;
+}
